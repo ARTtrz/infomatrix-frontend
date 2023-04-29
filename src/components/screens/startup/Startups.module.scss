@@ -1,0 +1,16 @@
+.wrapper {
+	@apply relative bg-white;
+	min-height: 100vh;
+
+	.main {
+		background: #fff;
+		min-height: 100vh;
+		padding: 50px 60px;
+		color: black;
+
+		z-index: 2;
+		border-radius: 50px;
+		width: 85%;
+		margin: -100px auto;
+	}
+}

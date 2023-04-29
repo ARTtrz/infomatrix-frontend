@@ -1,0 +1,46 @@
+.wrapper {
+	@apply text-white;
+	// background: #18101f;
+	background: radial-gradient(#e66465 20%, #18101f);
+	border-radius: 0px 0px 160px 160px;
+	padding: 20px 70px;
+
+	.header {
+		@apply flex items-center justify-between;
+		.nav {
+			> a:first-child {
+				margin-right: 20px;
+			}
+			width: 20%;
+		}
+		.user {
+			width: 20%;
+			text-align: right;
+		}
+	}
+	.search {
+		width: 70%;
+		text-align: center;
+		margin: 80px auto;
+		padding-bottom: 60px;
+		h1 {
+			font-size: 78px;
+			line-height: 120%;
+			/* identical to box height, or 94px */
+			font-style: normal;
+			font-weight: 700;
+			text-align: center;
+			letter-spacing: 0.01em;
+		}
+		p {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 120%;
+			/* or 29px */
+			margin-top: 20px;
+			text-align: center;
+			letter-spacing: 0.01em;
+		}
+	}
+}

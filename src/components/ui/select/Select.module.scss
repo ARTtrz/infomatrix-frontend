@@ -1,0 +1,13 @@
+.selectContainer {
+	@apply relative mb-8 animate-fade;
+	z-index: 2;
+	width: 30%;
+
+	> label {
+		@apply block;
+
+		> span {
+			@apply mb-1 block text-xs uppercase text-primary;
+		}
+	}
+}

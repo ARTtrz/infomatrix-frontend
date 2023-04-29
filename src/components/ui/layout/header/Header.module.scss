@@ -1,0 +1,27 @@
+.header {
+	@apply flex items-center justify-between;
+
+	.logo {
+	}
+
+	.service {
+		@apply flex items-center gap-5 font-semibold text-white;
+		.about {
+			color: #f8f7fa;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+		}
+		.log {
+			border: 2px solid #ff294f;
+			border-radius: 30px;
+			padding: 8px 16px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 120%;
+			color: #f22865;
+		}
+	}
+}
