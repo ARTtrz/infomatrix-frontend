@@ -19,7 +19,7 @@ const Header: FC = () => {
 				<Link href='/' className={styles.about}>
 					О сервисе
 				</Link>
-				<Link href='/' className={styles.log}>
+				<Link href='/login' className={styles.log}>
 					Войти
 				</Link>
 			</div>

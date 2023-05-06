@@ -7,7 +7,7 @@
 		@apply block;
 
 		> span {
-			@apply mb-1 block text-xs uppercase text-primary;
+			@apply mb-1 block text-xs font-semibold uppercase text-red;
 		}
 	}
 }

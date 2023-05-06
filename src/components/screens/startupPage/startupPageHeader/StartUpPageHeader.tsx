@@ -3,10 +3,11 @@ import Link from 'next/link'
 import { FC } from 'react'
 
 import Logo from '../../../../../public/logostart.png'
+import { IStartupPage } from '../StartupPage.interface'
 
 import styles from './StartUpPageHeader.module.scss'
 
-const StartUpPageHeader: FC = () => {
+const StartUpPageHeader: FC<IStartupPage> = ({ startup }) => {
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.header}>
@@ -25,7 +26,17 @@ const StartUpPageHeader: FC = () => {
 				</Link>
 				<div className={styles.user}>Артем</div>
 			</div>
-			<div className={styles.search}></div>
+			<div className={styles.main_info}>
+				<Image
+					src={startup.logo}
+					width={200}
+					height={200}
+					alt='logo'
+				/>
+				<h1 className={styles.title}>{startup.name}</h1>
+				<p className={styles.country}>{startup.region}</p>
+				<p className={styles.field}>{startup.industry}</p>
+			</div>
 		</div>
 	)
 }

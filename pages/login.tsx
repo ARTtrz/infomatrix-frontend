@@ -1,7 +1,9 @@
 import { FC } from 'react'
 
-const LoginPage: FC = () => {
-	return <div>dad</div>
+import LoginPage from '@/src/components/screens/login/Login'
+
+const Login: FC = () => {
+	return <LoginPage />
 }
 
-export default LoginPage
+export default Login

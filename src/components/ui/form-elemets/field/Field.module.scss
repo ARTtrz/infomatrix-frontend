@@ -1,0 +1,21 @@
+.common{
+	label{
+		@apply flex flex-col items-start;
+		width: 100%;
+		span{
+			@apply mb-2 mt-2 font-semibold;
+		}
+		input{
+			width: 100%;
+			border: 1px solid #f8f7fa;
+			
+			border-radius: 20px;
+			padding: 10px 20px;
+			background: rgba(107, 105,135,0.21);
+		}
+	}
+	.error{
+		@apply text-red;
+		text-align: left;
+	}
+}

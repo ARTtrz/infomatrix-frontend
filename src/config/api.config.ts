@@ -1,1 +1,5 @@
-export const API_URL = `${process.env.APP_URL}/api`
+export const API_URL = `${process.env.API_URL}`
+
+export const getStartupUrl = (string: string) => {
+	return `/get_startups${string}`
+}

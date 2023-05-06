@@ -1,5 +1,5 @@
-import { IStartup } from '../startup/startups.interface'
+import { IStartUp } from '@/src/shared/types/startup.types'
 
 export interface IStartupPage {
-	startup: IStartup
+	startup: IStartUp
 }

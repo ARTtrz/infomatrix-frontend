@@ -1,0 +1,46 @@
+.wrapper{
+	@apply bg-white;
+	min-height: 100vh;
+
+	.tabs{
+		
+		margin-top: -100px;
+		.blocks{
+			@apply flex items-center justify-center gap-5;
+			
+			.tabs_item{
+				cursor: pointer;
+				padding: 5px;
+				text-align: center;
+				border: 1px solid #de1a3e;
+				border-radius: 20px;
+				width: 10%;
+				transform: all .5s;
+				&:hover{
+					@apply bg-red;
+				}
+			}
+
+			.active{
+				@apply bg-red;
+			}
+		}
+	}
+	.content_tabs{
+		@apply mt-5;
+		min-height: 50vh;
+		.content{
+			display: none;
+		}
+		.active_content{
+			display: block;
+			@apply bg-white text-black;
+			border-radius: 50px;
+			width: 85%;
+			box-shadow: 0px 4px 44px rgba(220, 152, 164, 0.16);
+			margin: 0 auto;
+			padding: 60px;
+			
+		}
+	}
+}

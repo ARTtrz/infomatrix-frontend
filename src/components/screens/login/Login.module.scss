@@ -1,0 +1,42 @@
+.wrapper {
+	@apply relative;
+	height: 100vh;
+
+	> form {
+		background: rgba(107, 105, 135, 0.21);
+		box-shadow: 0px 15px 40px rgba(19, 20, 38, 0.09);
+		backdrop-filter: blur(2.5px);
+		/* Note: backdrop-filter has minimal browser support */
+
+		border-radius: 60px;
+		padding: 40px;
+		@apply text-white absolute air-block mx-auto w-1/2 bg-opacity-80 p-7 text-center;
+		height: 75%;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 25%;
+		
+
+		.form_wrapper{
+			width: 80%;
+			margin: 0 auto;
+
+			.text{
+			@apply pt-10;
+			span{
+				@apply text-white;
+			}
+			.register{
+				@apply text-red ml-2 underline font-semibold;
+				
+			}
+			h1{
+				@apply font-semibold;
+				color: #f8f7fa;
+				font-size: 50px;
+				margin-bottom: 10px;
+			}
+		}
+		}
+	}
+}

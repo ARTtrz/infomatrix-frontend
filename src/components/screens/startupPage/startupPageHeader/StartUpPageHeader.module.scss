@@ -1,0 +1,42 @@
+.wrapper {
+	@apply text-white;
+	// background: #18101f;
+	background: radial-gradient(#e66465 10%, #18101f);
+	border-radius: 0px 0px 160px 160px;
+	padding:40px 70px;
+
+	.header {
+		@apply flex items-center justify-between;
+		.nav {
+			> a:first-child {
+				margin-right: 20px;
+			}
+			width: 20%;
+		}
+		.user {
+			width: 20%;
+			text-align: right;
+		}
+	}
+	.main_info{
+		@apply flex items-center flex-col;
+		margin: 60px 0;
+
+		img{
+			
+			border-radius: 50%;
+
+		}
+
+		.title{
+			@apply uppercase font-bold text-3xl mt-2 mb-2;
+		}
+		.country{
+			@apply text-xl;
+		}
+		.category{
+			@apply text-xl;
+		}
+	}
+
+}
